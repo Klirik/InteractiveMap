@@ -100,7 +100,7 @@
 			cropped.xz = (v.vertex.xz - _VertexMin) / (_VertexMax - _VertexMin)
 				* (croppedMax - croppedMin) + croppedMin;
 
-			v.vertex.y = getVertex(cropped).y;
+			v.vertex.y = getVertex(cropped).y-0.5;
 			v.texcoord = float4(vertexToUV(cropped), 0,0);
 		}
 		
